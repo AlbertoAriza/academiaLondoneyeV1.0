@@ -1,0 +1,192 @@
+/* INITIAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* ESTILOS GENERALES - ESTILOS DE PÁRRAFOS */
+p{
+    text-align: justify;
+}
+
+/* HEADER STYLE */
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /*#logo{
+        background: orange;
+    }*/
+    
+        #logo img{
+            width: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-right: 1px solid gray;
+        }
+
+
+    /*#title{
+        background: blue;
+    }*/
+
+    #data{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #data .mediaIcon{
+            width: 50px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #data #mediaIconYoutube{
+            border-left: 1px solid gray;
+            padding-left: 10px;
+        }
+        
+
+    /* NAV STYLE */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 20px;
+    }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+/* MAIN STYLE → (ASIDE + SECTION) */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+    h1, h2{
+        text-align: center;
+    }
+
+    /* ASIDE STYLE */
+    aside{
+        background-color: gainsboro;
+        width: 20%;
+    }
+
+        aside h3{
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        aside .contentBox{
+            position: relative;
+            max-width: 100%;
+            border-bottom: 1px solid gray;
+        }
+
+            /* Aside → contentBox → Label */
+            aside .contentBox .label{
+                position: relative;
+                width: 100%;
+                padding: 10px 20px;
+                background: #f2f2f2;
+                cursor: pointer;
+            }
+
+            aside .contentBox .label::before{
+                content: '+';
+                position: absolute;
+                top: 45%;
+                right: 20px;
+                transform: translateY(-50%);
+                font-size: 1.5em;
+            }
+        
+            aside .contentBox.active .label::before{
+                content:'-';
+            }
+
+            /* Aside → contentBox → Content */
+            aside .contentBox .content{
+                position: relative;
+                background: #fff;
+                height: 0;
+                width: 100%;
+                overflow: hidden;
+                transition: 0.5s;
+                /*overflow-y: auto;*/
+            }
+
+            aside .contentBox.active .content{
+                height: auto;
+            }
+
+                /* Enlaces dentro de content */
+                aside .contentBox .content a{
+                    text-decoration: none;
+                    display: block;
+                    padding:  10px 20px 10px 20px;
+                    color: black;
+                }
+                
+                aside .contentBox .content a:hover{
+                    background: #f2f2f2;
+                }
+
+                /* QUEDA PENDIENTE ARREGLAR ESTO PARA QUE SALGA UN
+                   TICK CUANDO SE TERMINE UN APARTADO JUNTO AL NOMBRE */
+                /*aside .contentBox .content a:visited::before{
+                    content: '\2713';
+                    position: absolute;
+                    top: 45%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    font-size: 1.5em;
+                }*/
+
+    /* UNIT SECTION STYLE */
+    #mainContent{
+        padding: 10px;
+        width: 80%;
+    }
+
+/* FOOTER STYLE */
+footer{
+    border-top: 1px solid gray;
+}
+
+    #footerContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+        #footerContent a{
+            text-decoration: none;
+            color: black;
+        }
+
+    #footerCopy{
+        padding: 20px;
+    }

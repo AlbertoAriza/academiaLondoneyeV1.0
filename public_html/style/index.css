@@ -1,0 +1,78 @@
+/* MAIN STYLE */
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+    /* main → section1 style */
+    section{
+        margin-top: 100px;
+    }
+
+    /* Contiene la imagen grande y el slogan de arriba */
+    #section1{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: space-around;
+        align-items: center;
+    }
+        #section1Foto, #section1Texto{
+            padding: 0 20px;
+        }
+        /*#section1Foto{
+            width: 200px;
+        }*/
+
+            #section1 div p{
+                text-align: center;
+            }
+        #franjaGris{
+            grid-column: span 2;
+            background: #f2f2f2;
+            padding: 40px;
+        }
+    /*************************************************/
+
+    /* main → section2 style */
+    /* Contiene las cajas de los cursos gratuitos */
+        .contenedorCursos{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+            /* ESTILOS DE CAJAS DE CURSOS */
+            /* contenedorCursos → cursoGratis */
+            .cursoGratis{
+                border: 1px solid gray;
+                background: #f2f2f2;
+                border-radius: 10px;
+                margin: 20px;
+            }
+                /* contenedorCursos → cursoGratis → fotoCurso */
+                /* Estilo foto del curso */
+                .fotoCurso img{
+                    width: 300px;
+                    border-radius: 10px 10px 0 0;
+                }
+
+                
+                /* contenedorCursos → cursoGratis → cursoInfo */
+                .cursoInfo{
+                    text-align: center;
+                }
+
+                    /* Estilo del título 'h3' del curso */
+                    /* contenedorCursos → cursoGratis → cursoInfo → h3 */
+                    .cursoInfo h3{
+                        padding: 20px;
+                    }
+    /*************************************************/
+
+    /* main → section3 style */
+    /* Contiene la sección nuestros profesores */
+
+
+/*************************************************************/
+/********************** FIN MAIN STYLE ***********************/ 
+/*************************************************************/  

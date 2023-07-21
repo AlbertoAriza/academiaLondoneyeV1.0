@@ -1,0 +1,68 @@
+/*************************************************************/ 
+/******************** FIN ESTILOS GENERALES ******************/ 
+/*************************************************************/ 
+
+/* HEADER STYLE */
+
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /*#logo{
+        background: orange;
+    }*/
+    
+        #logo img{
+            width: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-right: 1px solid gray;
+        }
+
+
+    /*#title{
+        background: blue;
+    }*/
+
+    #data{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #data .mediaIcon{
+            width: 50px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #data #mediaIconYoutube{
+            border-left: 1px solid gray;
+            padding-left: 10px;
+        }
+        
+
+    /* NAV STYLE */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 20px;
+    }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+/*************************************************************/ 
+/************************** FIN HEADER ***********************/ 
+/*************************************************************/ 

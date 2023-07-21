@@ -1,0 +1,33 @@
+/* INITIAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* ESTILOS GENERALES - ESTILOS DE Hs */
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+
+/* BOTONES GENERICOS */
+.btn_generico{
+    width: 80%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 3px solid #F56800;
+    margin: 10px;
+    background: white;
+    color: #4054B2;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn_generico:hover{
+    border: 3px solid #BC5800;
+    box-shadow: 0 0 5px gray, 0 0 10px gray, 0 0 15px gray;
+}

@@ -1,0 +1,27 @@
+/*************************************************************/
+/*********************** FOOTER STYLES ***********************/ 
+/*************************************************************/  
+footer{
+    border-top: 1px solid gray;
+}
+
+    #footerContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+        #footerContent a{
+            text-decoration: none;
+            color: black;
+        }
+
+    #footerCopy{
+        padding: 20px;
+    }
+/*************************************************************/ 
+/*************************************************************/ 
+/*************************************************************/ 
